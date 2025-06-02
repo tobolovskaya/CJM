@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Карта CJM</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8f9fa;
+      padding: 20px;
+    }
+    .cjm-grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 10px;
+    }
+    .block {
+      border-radius: 10px;
+      padding: 12px;
+      text-align: center;
+      font-size: 14px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .header {
+      background: #f9f9f9;
+      font-weight: bold;
+    }
+    .pro {
+      background: #fff3cd;
+    }
+    .interaction {
+      background: #ffeeba;
+    }
+    .value {
+      background: #d4edda;
+    }
+    .action {
+      background: #bee5eb;
+    }
+    .functionality {
+      background: #d6d8db;
+    }
+  </style>
+</head>
+<body>
+  <h2>CJM: Карта взаємодії користувача</h2>
+  <div class="cjm-grid">
+    <!-- Кроки -->
+    <div class="block header">Крок</div>
+    <div class="block pro">Ознайомлення</div>
+    <div class="block pro">Створення сторінки</div>
+    <div class="block pro">Кастомізація</div>
+    <div class="block pro">Публікація</div>
+    <div class="block pro">Аналітика</div>
+    <div class="block pro">Апгрейд</div>
+
+    <!-- Взаємодія -->
+    <div class="block header">Спосіб взаємодії</div>
+    <div class="block interaction">Лендінг, приклад сторінки</div>
+    <div class="block interaction">Демо-редактор без реєстрації</div>
+    <div class="block interaction">Кольори, аватар, базове оформлення</div>
+    <div class="block interaction">Кнопка “Зберегти” / “Поділитися”</div>
+    <div class="block interaction">Повертається в акаунт</div>
+    <div class="block interaction">Перехід на тарифну сторінку</div>
+
+    <!-- Цінність -->
+    <div class="block header">Цінність для клієнта</div>
+    <div class="block value">Розуміння, що це за сервіс</div>
+    <div class="block value">Створює власну сторінку одразу</div>
+    <div class="block value">Персоналізує під себе</div>
+    <div class="block value">Готове посилання або QR</div>
+    <div class="block value">Бачить скільки людей перейшли</div>
+    <div class="block value">Розширює можливості</div>
+
+    <!-- Цільова дія -->
+    <div class="block header">Цільова дія</div>
+    <div class="block action">Натискає “Спробувати”</div>
+    <div class="block action">Додає перше посилання</div>
+    <div class="block action">Обирає стиль сторінки</div>
+    <div class="block action">Копіює URL чи генерує QR</div>
+    <div class="block action">Перевіряє статистику</div>
+    <div class="block action">Оплачує Pro</div>
+
+    <!-- Функціонал -->
+    <div class="block header">Функціонал</div>
+    <div class="block functionality">Демосторінка, просте пояснення</div>
+    <div class="block functionality">Редактор, шаблони</div>
+    <div class="block functionality">Кастомізація теми</div>
+    <div class="block functionality">Генерація посилання та QR</div>
+    <div class="block functionality">Кількість кліків</div>
+    <div class="block functionality">Сторінка тарифів, Stripe</div>
+  </div>
+</body>
+</html>
