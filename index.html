@@ -2,109 +2,106 @@
 <html lang="uk">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Карта CJM</title>
+  <title>CJM: Карта взаємодії користувача</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: Arial, sans-serif;
       background: #f8f9fa;
       padding: 20px;
     }
-    .cjm-grid {
-      display: grid;
-      grid-template-columns: repeat(8, 1fr);
-      gap: 10px;
-    }
-    .block {
-      border-radius: 10px;
-      padding: 12px;
+    h2 {
       text-align: center;
-      font-size: 14px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
-    .header {
-      background: #f9f9f9;
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+      vertical-align: top;
+    }
+    th {
+      background-color: #fff;
       font-weight: bold;
     }
-    .pro {
-      background: #fff3cd;
+    td:nth-child(even) {
+      background-color: #fff;
     }
-    .interaction {
-      background: #ffeeba;
-    }
-    .value {
-      background: #d4edda;
-    }
-    .action {
-      background: #bee5eb;
-    }
-    .functionality {
-      background: #d6d8db;
-    }
+    .header { background-color: #ffeeba; }
+    .touchpoint { background-color: #fff3cd; }
+    .value { background-color: #d4edda; }
+    .action { background-color: #bee5eb; }
+    .functionality { background-color: #dee2e6; }
+    .barrier { background-color: #ced4da; }
+    td { word-wrap: break-word; }
   </style>
 </head>
 <body>
-  <h2>CJM: Карта взаємодії користувача</h2>
-  <div class="cjm-grid">
-    <!-- Кроки -->
-    <div class="block header">Крок</div>
-    <div class="block pro">Ознайомлення</div>
-    <div class="block pro">Створення сторінки</div>
-    <div class="block pro">Кастомізація</div>
-    <div class="block pro">Публікація</div>
-    <div class="block pro">Аналітика</div>
-    <div class="block pro">Апгрейд</div>
-    <div class="block pro">Утримання</div>
-
-    <!-- Взаємодія -->
-    <div class="block header">Спосіб взаємодії</div>
-    <div class="block interaction">Лендінг, приклад сторінки</div>
-    <div class="block interaction">Інтерактивна форма реєстрації</div>
-    <div class="block interaction">Кольори, аватар, базове оформлення</div>
-    <div class="block interaction">Кнопка “Зберегти” / “Поділитися”</div>
-    <div class="block interaction">Повертається в акаунт</div>
-    <div class="block interaction">Перехід на тарифну сторінку</div>
-    <div class="block interaction">Email, push-нагадування</div>
-
-    <!-- Цінність -->
-    <div class="block header">Цінність для клієнта</div>
-    <div class="block value">Розуміння, що це за сервіс</div>
-    <div class="block value">Створює власну сторінку одразу</div>
-    <div class="block value">Персоналізує під себе</div>
-    <div class="block value">Готове посилання або QR</div>
-    <div class="block value">Бачить скільки людей перейшли</div>
-    <div class="block value">Розширює можливості</div>
-    <div class="block value">Отримує нові ідеї для оновлення</div>
-
-    <!-- Цільова дія -->
-    <div class="block header">Цільова дія</div>
-    <div class="block action">Натискає “Спробувати”</div>
-    <div class="block action">Додає перше посилання</div>
-    <div class="block action">Обирає стиль сторінки</div>
-    <div class="block action">Копіює URL чи генерує QR</div>
-    <div class="block action">Перевіряє статистику</div>
-    <div class="block action">Оплачує Pro</div>
-    <div class="block action">Переходить за email / шаблоном</div>
-
-    <!-- Функціонал -->
-    <div class="block header">Функціонал</div>
-    <div class="block functionality">Демосторінка, просте пояснення</div>
-    <div class="block functionality">Редактор, шаблони</div>
-    <div class="block functionality">Кастомізація теми</div>
-    <div class="block functionality">Генерація посилання та QR</div>
-    <div class="block functionality">Кількість кліків</div>
-    <div class="block functionality">Сторінка тарифів, Stripe</div>
-    <div class="block functionality">Email-дайджест, шаблони, контентна підтримка</div>
-
-    <!-- Барєри -->
-    <div class="block header">Барєри</div>
-    <div class="block functionality">Сумніви в безпеці / навігації</div>
-    <div class="block functionality">Страх складної реєстрації</div>
-    <div class="block functionality">Невпевненість у візуальному стилі</div>
-    <div class="block functionality">Страх “404” або не той QR-код</div>
-    <div class="block functionality">Недовіра до аналітики</div>
-    <div class="block functionality">Страх втратити гроші / марна покупка</div>
-    <div class="block functionality">Втрачає інтерес, не знає що змінювати</div>
-  </div>
+<h2>CJM: Карта взаємодії користувача</h2>
+<table>
+  <tr>
+    <th class="header">Крок</th>
+    <th class="header">Ознайомлення</th>
+    <th class="header">Створення сторінки</th>
+    <th class="header">Кастомізація</th>
+    <th class="header">Публікація</th>
+    <th class="header">Аналітика</th>
+    <th class="header">Апгрейд</th>
+    <th class="header">Утримання</th>
+  </tr>
+  <tr>
+    <td class="touchpoint"><strong>Спосіб взаємодії</strong></td>
+    <td class="touchpoint">Лендінг, приклад сторінки</td>
+    <td class="touchpoint">Інтерактивна форма реєстрації</td>
+    <td class="touchpoint">Кольори, аватар, базове оформлення</td>
+    <td class="touchpoint">Кнопка “Зберегти” / “Поділитися”</td>
+    <td class="touchpoint">Повертається в акаунт</td>
+    <td class="touchpoint">Перехід на тарифну сторінку</td>
+    <td class="touchpoint">Email, push-нагадування</td>
+  </tr>
+  <tr>
+    <td class="value"><strong>Цінність для клієнта</strong></td>
+    <td class="value">Розуміння, що це за сервіс</td>
+    <td class="value">Створює власну сторінку одразу</td>
+    <td class="value">Персоналізує під себе</td>
+    <td class="value">Готове посилання або QR</td>
+    <td class="value">Бачить скільки людей перейшли</td>
+    <td class="value">Розширює можливості</td>
+    <td class="value">Отримує нові ідеї для оновлення</td>
+  </tr>
+  <tr>
+    <td class="action"><strong>Цільова дія</strong></td>
+    <td class="action">Натискає “Спробувати”</td>
+    <td class="action">Додає перше посилання</td>
+    <td class="action">Обирає стиль сторінки</td>
+    <td class="action">Копіює URL чи генерує QR</td>
+    <td class="action">Перевіряє статистику</td>
+    <td class="action">Оплачує Pro</td>
+    <td class="action">Переходить за email / шаблоном</td>
+  </tr>
+  <tr>
+    <td class="functionality"><strong>Функціонал</strong></td>
+    <td class="functionality">Демосторінка, просте пояснення</td>
+    <td class="functionality">Редактор, шаблони</td>
+    <td class="functionality">Кастомізація теми</td>
+    <td class="functionality">Генерація посилання та QR</td>
+    <td class="functionality">Кількість кліків</td>
+    <td class="functionality">Сторінка тарифів, Stripe</td>
+    <td class="functionality">Email-дайджест, шаблони, контентна підтримка</td>
+  </tr>
+  <tr>
+    <td class="barrier"><strong>Бар'єри</strong></td>
+    <td class="barrier">Страх складної реєстрації</td>
+    <td class="barrier">Невпевненість у візуальному стилі</td>
+    <td class="barrier">Страх “404” або не той QR-код</td>
+    <td class="barrier">Недовіра до аналітики</td>
+    <td class="barrier">Втрачає інтерес, не знає що змінювати</td>
+    <td class="barrier">Сумніви в безпеці / навігації</td>
+    <td class="barrier">Втрачає мотивацію</td>
+  </tr>
+</table>
 </body>
 </html>
